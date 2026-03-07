@@ -2,10 +2,12 @@
 
 buildscript {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         google()
         mavenCentral()
+        // Aliyun mirrors – useful for developers in China; kept as fallback so
+        // they never poison the resolution chain when unreachable from GitHub CI.
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         jcenter() // fallback for older artifacts not yet on Maven Central
     }
     dependencies {
@@ -18,10 +20,10 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         google()
         mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         jcenter() // fallback for older artifacts not yet on Maven Central
     }
 }
