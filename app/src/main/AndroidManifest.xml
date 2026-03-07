@@ -5,12 +5,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- TV-specific: declare it uses the Leanback UI -->
+    <!-- TV: 声明支持 Leanback，但设为非必需以便在手机上也能安装调试 -->
     <uses-feature
         android:name="android.software.leanback"
-        android:required="true" />
+        android:required="false" />
 
-    <!-- TV apps do not require a touchscreen -->
+    <!-- TV 不需要触摸屏 -->
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -19,12 +19,14 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Leanback">
+        android:theme="@style/AppTheme">
 
-        <!-- Main TV launcher activity (placeholder) -->
+        <!-- 极简登录测试界面 -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <!-- 同时注册普通启动器和 TV 启动器，确保两种设备都能启动 -->
+                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
