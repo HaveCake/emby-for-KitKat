@@ -41,14 +41,17 @@ public final class SecureOkHttpClientFactory {
     private SecureOkHttpClientFactory() { /* utility class */ }
 
     /**
-     * Builds a new {@link OkHttpClient} with:
-     * <ul>
-     *   <li>TLS 1.2 enabled (KitKat patch)</li>
-     *   <li>Platform-default {@link HostnameVerifier} to bypass the
-     *       vulnerable OkHttp internal verifier</li>
-     * </ul>
+     * Creates an {@link OkHttpClient.Builder} with the TLS 1.2 patch and
+     * platform-default {@link HostnameVerifier} already applied.
+     * <p>
+     * Callers may add extra interceptors or timeouts before calling
+     * {@code build()}. For example, {@link NetworkManager} adds the
+     * {@link EmbyAuthInterceptor} on top of this builder.
+     *
+     * @return a pre-configured Builder; call {@code build()} to obtain
+     *         a secure OkHttpClient
      */
-    public static OkHttpClient create() {
+    public static OkHttpClient.Builder createBuilder() {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
 
         // --- Mitigation: override OkHttp's hostname verifier ----------------
@@ -94,6 +97,14 @@ public final class SecureOkHttpClientFactory {
             builder.addInterceptor(logging);
         }
 
-        return builder.build();
+        return builder;
+    }
+
+    /**
+     * Convenience method: creates a secure {@link OkHttpClient} without
+     * any additional interceptors.
+     */
+    public static OkHttpClient create() {
+        return createBuilder().build();
     }
 }
