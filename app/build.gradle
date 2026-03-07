@@ -61,7 +61,12 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
 
     // ---- OkHttp 3.12.13 (last release supporting TLS on Android 4.4) ----
-    // Pair with a custom TLS 1.2 socket factory for KitKat devices.
+    // KNOWN VULNERABILITY: GHSA-w33c-445m-f8w7 – OkHttp < 4.9.2 may accept
+    // a certificate whose SAN does not match the requested host.  Upgrading
+    // to 4.x is impossible (requires Kotlin + API 21).  The vulnerability is
+    // mitigated at the application layer by SecureOkHttpClientFactory, which
+    // replaces OkHttp's internal OkHostnameVerifier with the platform-default
+    // verifier (see network/SecureOkHttpClientFactory.java).
     implementation 'com.squareup.okhttp3:okhttp:3.12.13'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.13'
 
