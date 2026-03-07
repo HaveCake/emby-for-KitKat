@@ -26,6 +26,11 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
+      - name: Fix AGP 3.x SDK parsing bug (Remove modern SDKs)
+        run: |
+          rm -rf $ANDROID_HOME/platforms/android-3[4-9]*
+          rm -rf $ANDROID_HOME/build-tools/3[4-9]*
+
       - name: Build debug APK
         run: ./gradlew assembleDebug --no-daemon --stacktrace
 
