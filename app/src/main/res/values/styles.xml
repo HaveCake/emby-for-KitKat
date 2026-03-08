@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- 基础 AppCompat 主题（兼容 API 19，不使用 AndroidX） -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FF6200EE</item>
+        <item name="colorPrimaryDark">#FF3700B3</item>
+        <item name="colorAccent">#FF03DAC5</item>
+    </style>
+
+</resources>

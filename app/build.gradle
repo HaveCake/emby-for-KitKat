@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "org.jellyfin.emby.kitkat"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Force every transitive dependency to honour version ceilings so that no
+// higher-than-intended library sneaks in through the dependency graph.
+// ---------------------------------------------------------------------------
+configurations.all {
+    resolutionStrategy {
+        // Pin the Android Support Libraries to 28.0.0 (last pre-AndroidX release)
+        force 'com.android.support:support-v4:28.0.0'
+        force 'com.android.support:appcompat-v7:28.0.0'
+        force 'com.android.support:leanback-v17:28.0.0'
+        force 'com.android.support:support-annotations:28.0.0'
+        force 'com.android.support:support-fragment:28.0.0'
+        force 'com.android.support:recyclerview-v7:28.0.0'
+        force 'com.android.support:support-compat:28.0.0'
+        force 'com.android.support:support-core-utils:28.0.0'
+        force 'com.android.support:support-core-ui:28.0.0'
+
+        // Pin OkHttp – 3.12.x is the last branch that supports Android 4.x
+        force 'com.squareup.okhttp3:okhttp:3.12.13'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    // ---- Android Support Libraries (NOT AndroidX) ----
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:leanback-v17:28.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    // ---- OkHttp 3.12.13 (last release supporting TLS on Android 4.4) ----
+    // KNOWN VULNERABILITY: GHSA-w33c-445m-f8w7 – OkHttp < 4.9.2 may accept
+    // a certificate whose SAN does not match the requested host.  Upgrading
+    // to 4.x is impossible (requires Kotlin + API 21).  The vulnerability is
+    // mitigated at the application layer by SecureOkHttpClientFactory, which
+    // replaces OkHttp's internal OkHostnameVerifier with the platform-default
+    // verifier (see network/SecureOkHttpClientFactory.java).
+    implementation 'com.squareup.okhttp3:okhttp:3.12.13'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.13'
+
+    // ---- Retrofit 2.6.4 ----
+    implementation 'com.squareup.retrofit2:retrofit:2.6.4'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.4'
+
+    // ---- Gson ----
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // ---- Glide 4.8.0 (last release using Support Library; 4.9+ requires AndroidX) ----
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // ---- IjkPlayer 0.8.8 (32-bit only; 64-bit ABIs require API 21+) ----
+    // JCenter (Bintray) is defunct and these artifacts were never on Maven Central.
+    // Real AAR files (with native .so) must be placed in app/libs/ manually.
+    // Download from: https://github.com/nicedow/ijkplayer or build from source.
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+}

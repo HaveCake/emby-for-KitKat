@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        // Aliyun mirrors – useful for developers in China; kept as fallback so
+        // they never poison the resolution chain when unreachable from GitHub CI.
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        jcenter() // fallback for older artifacts not yet on Maven Central
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // Aliyun mirrors – useful for developers in China; kept as fallback so
+        // they never poison the resolution chain when unreachable from GitHub CI.
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        jcenter() // fallback for older artifacts not yet on Maven Central
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
