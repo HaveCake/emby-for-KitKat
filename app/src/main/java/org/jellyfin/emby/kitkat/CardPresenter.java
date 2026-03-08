@@ -5,8 +5,10 @@ import android.support.v17.leanback.widget.Presenter;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestOptions;
 
 import org.jellyfin.emby.kitkat.model.EmbyItem;
@@ -16,7 +18,7 @@ import org.jellyfin.emby.kitkat.network.NetworkManager;
  * Leanback 卡片 Presenter —— 把 {@link EmbyItem} 渲染为 {@link ImageCardView}。
  * <p>
  * 使用 Glide 4.8.0 加载 Emby Server 的真实海报图片。
- * 海报 URL 拼接规则：{@code baseUrl + "/Items/" + itemId + "/Images/Primary"}
+ * 海报 URL 拼接规则：{@code baseUrl + "Items/" + itemId + "/Images/Primary?maxWidth=400&maxHeight=600&quality=80"}
  */
 public class CardPresenter extends Presenter {
 
@@ -47,9 +49,11 @@ public class CardPresenter extends Presenter {
 
         cardView.setMainImageDimensions(CARD_WIDTH, CARD_HEIGHT);
 
-        // 拼接 Emby 海报 URL
+        // 拼接 Emby 海报 URL（强制缩略图参数，防止原图导致内存溢出）
         String baseUrl = NetworkManager.getInstance().getBaseUrl();
-        String imageUrl = baseUrl + "/Items/" + embyItem.getId() + "/Images/Primary";
+        String normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
+        String imageUrl = normalizedBaseUrl + "Items/" + embyItem.getId()
+                + "/Images/Primary?maxWidth=400&maxHeight=600&quality=80";
 
         // 通过请求头携带 AccessToken 进行认证（token 为空时仍可请求无需认证的图片）
         String token = NetworkManager.getInstance().getAuthInterceptor().getAccessToken();
@@ -63,7 +67,9 @@ public class CardPresenter extends Presenter {
                 .load(glideUrl)
                 .apply(new RequestOptions()
                         .centerCrop()
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .error(android.R.drawable.ic_menu_report_image))
+                .transition(DrawableTransitionOptions.withCrossFade())
                 .into(cardView.getMainImageView());
     }
 
