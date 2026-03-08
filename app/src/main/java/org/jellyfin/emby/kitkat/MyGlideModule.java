@@ -27,6 +27,9 @@ import java.io.InputStream;
  * 通过注册 {@link OkHttpUrlLoader.Factory}，Glide 的所有网络请求都会走
  * {@link NetworkManager#getOkHttpClient()} 创建的安全连接，继承 TLS 1.2 补丁
  * 和 {@link org.jellyfin.emby.kitkat.network.EmbyAuthInterceptor} 认证拦截器。
+ *
+ * <p><b>初始化顺序要求：</b>{@link NetworkManager#init(String)} 必须在 Glide 首次
+ * 被使用之前调用（通常在 {@code Application.onCreate()} 或登录流程中完成）。</p>
  */
 @GlideModule
 public class MyGlideModule extends AppGlideModule {
