@@ -49,13 +49,9 @@ public class CardPresenter extends Presenter {
 
         // 拼接 Emby 海报 URL
         String baseUrl = NetworkManager.getInstance().getBaseUrl();
-        // 移除尾部斜杠以避免双斜杠
-        if (baseUrl.endsWith("/")) {
-            baseUrl = baseUrl.substring(0, baseUrl.length() - 1);
-        }
         String imageUrl = baseUrl + "/Items/" + embyItem.getId() + "/Images/Primary";
 
-        // 通过请求头携带 AccessToken 进行认证
+        // 通过请求头携带 AccessToken 进行认证（token 为空时仍可请求无需认证的图片）
         String token = NetworkManager.getInstance().getAuthInterceptor().getAccessToken();
         LazyHeaders.Builder headersBuilder = new LazyHeaders.Builder();
         if (token != null && !token.isEmpty()) {

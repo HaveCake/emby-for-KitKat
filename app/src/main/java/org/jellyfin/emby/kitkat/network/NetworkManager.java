@@ -135,10 +135,15 @@ public final class NetworkManager {
 
     /**
      * 获取 Emby Server 基础地址（用于拼接图片 URL 等）。
+     * <p>
+     * 返回值不含尾部斜杠，方便直接拼接路径。
      *
-     * @return 基础地址，例如 {@code "http://192.168.1.100:8096/"}
+     * @return 基础地址，例如 {@code "http://192.168.1.100:8096"}
      */
     public String getBaseUrl() {
+        if (baseUrl.endsWith("/")) {
+            return baseUrl.substring(0, baseUrl.length() - 1);
+        }
         return baseUrl;
     }
 
