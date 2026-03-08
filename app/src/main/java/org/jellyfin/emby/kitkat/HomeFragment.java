@@ -6,16 +6,30 @@ import android.support.v17.leanback.widget.ArrayObjectAdapter;
 import android.support.v17.leanback.widget.HeaderItem;
 import android.support.v17.leanback.widget.ListRow;
 import android.support.v17.leanback.widget.ListRowPresenter;
+import android.util.Log;
 
-import org.jellyfin.emby.kitkat.model.Movie;
+import org.jellyfin.emby.kitkat.model.EmbyItem;
+import org.jellyfin.emby.kitkat.model.EmbyItemsResponse;
+import org.jellyfin.emby.kitkat.model.EmbyViewsResponse;
+import org.jellyfin.emby.kitkat.network.NetworkManager;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Leanback 海报墙首页 Fragment。
  * <p>
- * 继承 {@link BrowseFragment}，使用假数据（Mock Data）展示几排横向滚动的
- * 电影海报卡片，验证 Leanback UI 在 Android 4.4 电视盒子上的显示效果。
+ * 继承 {@link BrowseFragment}，通过 Emby API 加载真实的媒体库数据，
+ * 为每个分类（View）创建一行横向滚动的海报卡片。
  */
 public class HomeFragment extends BrowseFragment {
+
+    private static final String TAG = "HomeFragment";
+
+    private ArrayObjectAdapter rowsAdapter;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -35,59 +49,84 @@ public class HomeFragment extends BrowseFragment {
     }
 
     /**
-     * 加载假数据行（Mock Data）到 BrowseFragment。
+     * 通过 Emby API 加载真实媒体库数据。
      * <p>
-     * 使用公开的 picsum.photos 占位图片服务作为电影封面。
+     * 先调用 getUserViews 获取分类列表，然后为每个分类异步加载媒体项。
      */
     private void loadRows() {
-        ArrayObjectAdapter rowsAdapter = new ArrayObjectAdapter(new ListRowPresenter());
-        CardPresenter cardPresenter = new CardPresenter();
-
-        // ── 第 1 行：热门推荐 ──
-        ArrayObjectAdapter row1Adapter = new ArrayObjectAdapter(cardPresenter);
-        row1Adapter.add(new Movie("银翼杀手 2049", "科幻 / 剧情",
-                "https://picsum.photos/seed/blade/313/176"));
-        row1Adapter.add(new Movie("星际穿越", "科幻 / 冒险",
-                "https://picsum.photos/seed/inter/313/176"));
-        row1Adapter.add(new Movie("盗梦空间", "科幻 / 动作",
-                "https://picsum.photos/seed/incep/313/176"));
-        row1Adapter.add(new Movie("流浪地球", "科幻 / 灾难",
-                "https://picsum.photos/seed/earth/313/176"));
-        row1Adapter.add(new Movie("阿凡达", "科幻 / 冒险",
-                "https://picsum.photos/seed/avatar/313/176"));
-        HeaderItem header1 = new HeaderItem(0, "热门推荐");
-        rowsAdapter.add(new ListRow(header1, row1Adapter));
-
-        // ── 第 2 行：最近添加 ──
-        ArrayObjectAdapter row2Adapter = new ArrayObjectAdapter(cardPresenter);
-        row2Adapter.add(new Movie("肖申克的救赎", "剧情 / 犯罪",
-                "https://picsum.photos/seed/shawshank/313/176"));
-        row2Adapter.add(new Movie("教父", "剧情 / 犯罪",
-                "https://picsum.photos/seed/godfather/313/176"));
-        row2Adapter.add(new Movie("蝙蝠侠：黑暗骑士", "动作 / 犯罪",
-                "https://picsum.photos/seed/batman/313/176"));
-        row2Adapter.add(new Movie("黑客帝国", "科幻 / 动作",
-                "https://picsum.photos/seed/matrix/313/176"));
-        row2Adapter.add(new Movie("千与千寻", "动画 / 奇幻",
-                "https://picsum.photos/seed/spirited/313/176"));
-        HeaderItem header2 = new HeaderItem(1, "最近添加");
-        rowsAdapter.add(new ListRow(header2, row2Adapter));
-
-        // ── 第 3 行：经典动作 ──
-        ArrayObjectAdapter row3Adapter = new ArrayObjectAdapter(cardPresenter);
-        row3Adapter.add(new Movie("速度与激情 7", "动作 / 犯罪",
-                "https://picsum.photos/seed/fast7/313/176"));
-        row3Adapter.add(new Movie("碟中谍 6", "动作 / 冒险",
-                "https://picsum.photos/seed/mi6/313/176"));
-        row3Adapter.add(new Movie("复仇者联盟 4", "动作 / 科幻",
-                "https://picsum.photos/seed/avengers/313/176"));
-        row3Adapter.add(new Movie("疯狂的麦克斯", "动作 / 冒险",
-                "https://picsum.photos/seed/madmax/313/176"));
-        row3Adapter.add(new Movie("角斗士", "动作 / 剧情",
-                "https://picsum.photos/seed/gladiator/313/176"));
-        HeaderItem header3 = new HeaderItem(2, "经典动作");
-        rowsAdapter.add(new ListRow(header3, row3Adapter));
-
+        rowsAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         setAdapter(rowsAdapter);
+
+        final String userId = NetworkManager.getInstance().getUserId();
+        if (userId == null) {
+            Log.e(TAG, "UserId 为空，无法加载媒体库");
+            return;
+        }
+
+        NetworkManager.getInstance().getEmbyApiService()
+                .getUserViews(userId)
+                .enqueue(new Callback<EmbyViewsResponse>() {
+                    @Override
+                    public void onResponse(Call<EmbyViewsResponse> call,
+                                           Response<EmbyViewsResponse> response) {
+                        if (response.isSuccessful() && response.body() != null) {
+                            List<EmbyItem> views = response.body().getItems();
+                            if (views != null) {
+                                for (int i = 0; i < views.size(); i++) {
+                                    EmbyItem view = views.get(i);
+                                    addViewRow(view, i);
+                                }
+                            }
+                        } else {
+                            Log.e(TAG, "获取 Views 失败: HTTP " + response.code());
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<EmbyViewsResponse> call, Throwable t) {
+                        Log.e(TAG, "获取 Views 网络错误: " + t.getMessage());
+                    }
+                });
+    }
+
+    /**
+     * 为一个媒体库分类创建行，并异步加载该分类下的媒体项。
+     *
+     * @param view     分类信息（如"电影"、"剧集"）
+     * @param rowIndex 行索引（用于 HeaderItem id）
+     */
+    private void addViewRow(final EmbyItem view, int rowIndex) {
+        CardPresenter cardPresenter = new CardPresenter();
+        final ArrayObjectAdapter rowAdapter = new ArrayObjectAdapter(cardPresenter);
+
+        HeaderItem header = new HeaderItem(rowIndex, view.getName());
+        rowsAdapter.add(new ListRow(header, rowAdapter));
+
+        String userId = NetworkManager.getInstance().getUserId();
+        NetworkManager.getInstance().getEmbyApiService()
+                .getItems(userId, view.getId(), "Overview,ProductionYear", 20)
+                .enqueue(new Callback<EmbyItemsResponse>() {
+                    @Override
+                    public void onResponse(Call<EmbyItemsResponse> call,
+                                           Response<EmbyItemsResponse> response) {
+                        if (response.isSuccessful() && response.body() != null) {
+                            List<EmbyItem> items = response.body().getItems();
+                            if (items != null) {
+                                for (EmbyItem item : items) {
+                                    rowAdapter.add(item);
+                                }
+                            }
+                        } else {
+                            Log.e(TAG, "获取 " + view.getName()
+                                    + " 媒体项失败: HTTP " + response.code());
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<EmbyItemsResponse> call, Throwable t) {
+                        Log.e(TAG, "获取 " + view.getName()
+                                + " 媒体项网络错误: " + t.getMessage());
+                    }
+                });
     }
 }

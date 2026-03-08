@@ -46,6 +46,15 @@ public class EmbyAuthInterceptor implements Interceptor {
         this.accessToken = token;
     }
 
+    /**
+     * 获取当前保存的 AccessToken。
+     *
+     * @return AccessToken，未登录时为 null
+     */
+    public String getAccessToken() {
+        return accessToken;
+    }
+
     @Override
     public Response intercept(Chain chain) throws IOException {
         Request original = chain.request();
