@@ -21,14 +21,18 @@ import com.bumptech.glide.request.target.Target;
 import org.jellyfin.emby.kitkat.model.EmbyItem;
 import org.jellyfin.emby.kitkat.network.NetworkManager;
 
+import java.util.List;
+
 /**
  * Leanback 卡片 Presenter —— 把 {@link EmbyItem} 渲染为 {@link ImageCardView}。
  * <p>
  * 使用 Glide 4.8.0 加载 Emby Server 的真实海报图片。
- * 海报 URL 拼接规则：{@code baseUrl + "Items/" + itemId + "/Images/Primary?maxWidth=400&maxHeight=600&quality=80"}
+ * 优先使用 Primary 图片，不存在时依次回退到 Thumb、Backdrop。
+ * 只有当 {@code ImageTags} 中存在对应类型时才发起请求，避免无谓的 404。
  */
 public class CardPresenter extends Presenter {
 
+    private static final String TAG = "EmkatGlide";
     private static final int CARD_WIDTH = 313;
     private static final int CARD_HEIGHT = 176;
 
@@ -56,11 +60,15 @@ public class CardPresenter extends Presenter {
 
         cardView.setMainImageDimensions(CARD_WIDTH, CARD_HEIGHT);
 
-        // 拼接 Emby 海报 URL（强制缩略图参数，防止原图导致内存溢出）
-        String baseUrl = NetworkManager.getInstance().getBaseUrl();
-        String normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
-        String imageUrl = normalizedBaseUrl + "Items/" + embyItem.getId()
-                + "/Images/Primary?maxWidth=400&maxHeight=600&quality=80";
+        // 根据 ImageTags 确定可用的图片类型及标签
+        String imageUrl = resolveImageUrl(embyItem);
+        if (imageUrl == null) {
+            // 该媒体项没有任何可用图片，直接显示占位图，不发起网络请求
+            cardView.setMainImage(
+                    cardView.getContext().getResources()
+                            .getDrawable(android.R.drawable.ic_menu_report_image));
+            return;
+        }
 
         // 通过请求头携带 AccessToken 进行认证（token 为空时仍可请求无需认证的图片）
         String token = NetworkManager.getInstance().getAuthInterceptor().getAccessToken();
@@ -82,7 +90,7 @@ public class CardPresenter extends Presenter {
                     public boolean onLoadFailed(@Nullable GlideException e,
                             Object model, Target<Drawable> target,
                             boolean isFirstResource) {
-                        Log.e("EmkatGlide", "海报加载失败: "
+                        Log.e(TAG, "海报加载失败: "
                                 + (e != null ? e.getMessage() : "unknown"), e);
                         return false; // 让 Glide 继续显示 error placeholder
                     }
@@ -95,6 +103,44 @@ public class CardPresenter extends Presenter {
                     }
                 })
                 .into(cardView.getMainImageView());
+    }
+
+    /**
+     * 根据 {@link EmbyItem} 的 ImageTags 和 BackdropImageTags 解析可用的图片 URL。
+     * <p>
+     * 优先级：Primary → Thumb → Backdrop。仅当对应标签存在时才构建 URL，
+     * 并在查询参数中附带 {@code tag} 以利用服务端缓存。
+     *
+     * @param embyItem 媒体项
+     * @return 图片 URL，无可用图片时返回 null
+     */
+    private String resolveImageUrl(EmbyItem embyItem) {
+        String baseUrl = NetworkManager.getInstance().getBaseUrl();
+        String normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
+
+        // 1. Primary
+        if (embyItem.hasImage("Primary")) {
+            return normalizedBaseUrl + "Items/" + embyItem.getId()
+                    + "/Images/Primary?maxWidth=400&maxHeight=600&quality=80"
+                    + "&tag=" + embyItem.getImageTag("Primary");
+        }
+
+        // 2. Thumb
+        if (embyItem.hasImage("Thumb")) {
+            return normalizedBaseUrl + "Items/" + embyItem.getId()
+                    + "/Images/Thumb?maxWidth=400&maxHeight=600&quality=80"
+                    + "&tag=" + embyItem.getImageTag("Thumb");
+        }
+
+        // 3. Backdrop（使用第一张）
+        List<String> backdropTags = embyItem.getBackdropImageTags();
+        if (backdropTags != null && !backdropTags.isEmpty()) {
+            return normalizedBaseUrl + "Items/" + embyItem.getId()
+                    + "/Images/Backdrop/0?maxWidth=400&maxHeight=600&quality=80"
+                    + "&tag=" + backdropTags.get(0);
+        }
+
+        return null;
     }
 
     @Override
