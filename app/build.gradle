@@ -51,7 +51,7 @@ configurations.all {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
     // ---- Android Support Libraries (NOT AndroidX) ----
     implementation 'com.android.support:support-v4:28.0.0'
@@ -82,11 +82,10 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
     // ---- IjkPlayer 0.8.8 (32-bit only; 64-bit ABIs require API 21+) ----
-    // Vendored in local-repo/ because JCenter (Bintray) is defunct and these
-    // artifacts were never published to Maven Central.  Native .so libraries
-    // are NOT included; they must be built from source (bilibili/ijkplayer)
-    // and placed into the APK for actual device usage.
-    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
-    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
-    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+    // JCenter (Bintray) is defunct and these artifacts were never on Maven Central.
+    // Real AAR files (with native .so) must be placed in app/libs/ manually.
+    // Download from: https://github.com/nicedow/ijkplayer or build from source.
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
 }

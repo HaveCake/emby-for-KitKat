@@ -20,9 +20,6 @@ buildscript {
 
 allprojects {
     repositories {
-        // Local repo for vendored artifacts no longer available on public Maven
-        // repositories (e.g. ijkplayer – was JCenter-only and Bintray is dead).
-        maven { url "${rootProject.projectDir}/local-repo" }
         google()
         mavenCentral()
         // Aliyun mirrors – useful for developers in China; kept as fallback so
