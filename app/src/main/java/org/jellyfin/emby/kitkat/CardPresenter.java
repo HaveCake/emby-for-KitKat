@@ -5,6 +5,7 @@ import android.support.v17.leanback.widget.Presenter;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import org.jellyfin.emby.kitkat.model.Movie;
 
@@ -37,6 +38,9 @@ public class CardPresenter extends Presenter {
 
         Glide.with(cardView.getContext())
                 .load(movie.getCardImageUrl())
+                .apply(new RequestOptions()
+                        .centerCrop()
+                        .error(android.R.drawable.ic_menu_report_image))
                 .into(cardView.getMainImageView());
     }
 
