@@ -1,15 +1,22 @@
 package org.jellyfin.emby.kitkat;
 
+import android.graphics.drawable.Drawable;
+import android.support.annotation.Nullable;
 import android.support.v17.leanback.widget.ImageCardView;
 import android.support.v17.leanback.widget.Presenter;
+import android.util.Log;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.Target;
 
 import org.jellyfin.emby.kitkat.model.EmbyItem;
 import org.jellyfin.emby.kitkat.network.NetworkManager;
@@ -70,6 +77,23 @@ public class CardPresenter extends Presenter {
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .error(android.R.drawable.ic_menu_report_image))
                 .transition(DrawableTransitionOptions.withCrossFade())
+                .listener(new RequestListener<Drawable>() {
+                    @Override
+                    public boolean onLoadFailed(@Nullable GlideException e,
+                            Object model, Target<Drawable> target,
+                            boolean isFirstResource) {
+                        Log.e("EmkatGlide", "海报加载失败: "
+                                + (e != null ? e.getMessage() : "unknown"), e);
+                        return false; // 让 Glide 继续显示 error placeholder
+                    }
+
+                    @Override
+                    public boolean onResourceReady(Drawable resource,
+                            Object model, Target<Drawable> target,
+                            DataSource dataSource, boolean isFirstResource) {
+                        return false;
+                    }
+                })
                 .into(cardView.getMainImageView());
     }
 
