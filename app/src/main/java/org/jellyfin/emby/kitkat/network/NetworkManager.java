@@ -41,6 +41,9 @@ public final class NetworkManager {
     /** 认证拦截器（可在登录后通过它设置 AccessToken） */
     private final EmbyAuthInterceptor authInterceptor;
 
+    /** 安全的 OkHttpClient（包含 TLS 1.2 补丁 + Emby 认证拦截器） */
+    private final OkHttpClient okHttpClient;
+
     /** Emby Server 基础地址（用于拼接图片 URL 等） */
     private final String baseUrl;
 
@@ -60,14 +63,14 @@ public final class NetworkManager {
 
         // 2. 基于 SecureOkHttpClientFactory 创建安全的 OkHttpClient，
         //    并追加 Emby 认证拦截器
-        OkHttpClient client = SecureOkHttpClientFactory.createBuilder()
+        okHttpClient = SecureOkHttpClientFactory.createBuilder()
                 .addInterceptor(authInterceptor)
                 .build();
 
         // 3. 初始化 Retrofit
         retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
-                .client(client)
+                .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -131,6 +134,18 @@ public final class NetworkManager {
      */
     public EmbyAuthInterceptor getAuthInterceptor() {
         return authInterceptor;
+    }
+
+    /**
+     * 获取安全的 OkHttpClient 实例（已含 TLS 1.2 补丁和 Emby 认证拦截器）。
+     * <p>
+     * 主要供 Glide 的 {@code OkHttpUrlLoader} 使用，确保图片请求也经过
+     * 安全的网络通道和认证拦截器。
+     *
+     * @return 共享的 OkHttpClient 实例
+     */
+    public OkHttpClient getOkHttpClient() {
+        return okHttpClient;
     }
 
     /**
