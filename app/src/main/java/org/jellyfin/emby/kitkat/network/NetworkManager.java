@@ -41,12 +41,20 @@ public final class NetworkManager {
     /** 认证拦截器（可在登录后通过它设置 AccessToken） */
     private final EmbyAuthInterceptor authInterceptor;
 
+    /** Emby Server 基础地址（用于拼接图片 URL 等） */
+    private final String baseUrl;
+
+    /** 已登录用户的 ID，登录成功后设置 */
+    private volatile String userId;
+
     /**
      * 私有构造，由 {@link #init(String)} 调用。
      *
      * @param baseUrl Emby Server 地址，例如 {@code "http://192.168.1.100:8096"}
      */
     private NetworkManager(String baseUrl) {
+        this.baseUrl = baseUrl;
+
         // 1. 创建认证拦截器
         authInterceptor = new EmbyAuthInterceptor();
 
@@ -123,5 +131,32 @@ public final class NetworkManager {
      */
     public EmbyAuthInterceptor getAuthInterceptor() {
         return authInterceptor;
+    }
+
+    /**
+     * 获取 Emby Server 基础地址（用于拼接图片 URL 等）。
+     *
+     * @return 基础地址，例如 {@code "http://192.168.1.100:8096/"}
+     */
+    public String getBaseUrl() {
+        return baseUrl;
+    }
+
+    /**
+     * 保存已登录用户的 ID，供后续 API 调用使用。
+     *
+     * @param userId 用户 ID
+     */
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    /**
+     * 获取已登录用户的 ID。
+     *
+     * @return 用户 ID，未登录时为 null
+     */
+    public String getUserId() {
+        return userId;
     }
 }

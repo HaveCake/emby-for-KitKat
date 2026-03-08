@@ -130,6 +130,12 @@ public class MainActivity extends AppCompatActivity {
                                     .getAuthInterceptor()
                                     .setAccessToken(token);
 
+                            // 将 UserId 保存到 NetworkManager，供后续接口使用
+                            if (body.getSessionInfo() != null) {
+                                NetworkManager.getInstance()
+                                        .setUserId(body.getSessionInfo().getUserId());
+                            }
+
                             // 跳转到 Leanback 海报墙主界面
                             Intent intent = new Intent(MainActivity.this,
                                     HomeActivity.class);
