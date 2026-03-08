@@ -11,8 +11,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.GlideException;
-import com.bumptech.glide.load.model.GlideUrl;
-import com.bumptech.glide.load.model.LazyHeaders;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
@@ -21,6 +19,8 @@ import com.bumptech.glide.request.target.Target;
 import org.jellyfin.emby.kitkat.model.EmbyItem;
 import org.jellyfin.emby.kitkat.network.NetworkManager;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.List;
 
 /**
@@ -29,6 +29,10 @@ import java.util.List;
  * 使用 Glide 4.8.0 加载 Emby Server 的真实海报图片。
  * 优先使用 Primary 图片，不存在时依次回退到 Thumb、Backdrop。
  * 只有当 {@code ImageTags} 中存在对应类型时才发起请求，避免无谓的 404。
+ * <p>
+ * 鉴权方式：通过 URL Query 参数 {@code api_key} 传递 Token，
+ * 兼容 CDN / 反向代理剥离自定义 Header 的场景。
+ * 同时追加 {@code format=jpg} 强制服务端输出 JPEG，兼容 Android 4.4。
  */
 public class CardPresenter extends Presenter {
 
@@ -70,18 +74,11 @@ public class CardPresenter extends Presenter {
             return;
         }
 
-        // 通过请求头携带 AccessToken 进行认证（token 为空时仍可请求无需认证的图片）
-        String token = NetworkManager.getInstance().getAuthInterceptor().getAccessToken();
-        LazyHeaders.Builder headersBuilder = new LazyHeaders.Builder();
-        if (token != null && !token.isEmpty()) {
-            headersBuilder.addHeader("X-Emby-Token", token);
-        }
-        GlideUrl glideUrl = new GlideUrl(imageUrl, headersBuilder.build());
-
         Glide.with(cardView.getContext())
-                .load(glideUrl)
+                .load(imageUrl)
                 .apply(new RequestOptions()
                         .centerCrop()
+                        .override(CARD_WIDTH, CARD_HEIGHT)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .error(android.R.drawable.ic_menu_report_image))
                 .transition(DrawableTransitionOptions.withCrossFade())
@@ -110,6 +107,9 @@ public class CardPresenter extends Presenter {
      * <p>
      * 优先级：Primary → Thumb → Backdrop。仅当对应标签存在时才构建 URL，
      * 并在查询参数中附带 {@code tag} 以利用服务端缓存。
+     * <p>
+     * 鉴权通过 {@code api_key} 查询参数完成，兼容 CDN / 反向代理。
+     * 追加 {@code format=jpg} 强制服务端输出 JPEG，兼容 Android 4.4。
      *
      * @param embyItem 媒体项
      * @return 图片 URL，无可用图片时返回 null
@@ -117,27 +117,51 @@ public class CardPresenter extends Presenter {
     private String resolveImageUrl(EmbyItem embyItem) {
         String baseUrl = NetworkManager.getInstance().getBaseUrl();
         String normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
+        String token = NetworkManager.getInstance().getAuthInterceptor().getAccessToken();
 
         // 1. Primary
         if (embyItem.hasImage("Primary")) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
-                    + "/Images/Primary?tag=" + embyItem.getImageTag("Primary");
+                    + "/Images/Primary?tag=" + embyItem.getImageTag("Primary")
+                    + appendAuthAndFormat(token);
         }
 
         // 2. Thumb
         if (embyItem.hasImage("Thumb")) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
-                    + "/Images/Thumb?tag=" + embyItem.getImageTag("Thumb");
+                    + "/Images/Thumb?tag=" + embyItem.getImageTag("Thumb")
+                    + appendAuthAndFormat(token);
         }
 
         // 3. Backdrop（使用第一张）
         List<String> backdropTags = embyItem.getBackdropImageTags();
         if (backdropTags != null && !backdropTags.isEmpty()) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
-                    + "/Images/Backdrop/0?tag=" + backdropTags.get(0);
+                    + "/Images/Backdrop/0?tag=" + backdropTags.get(0)
+                    + appendAuthAndFormat(token);
         }
 
         return null;
+    }
+
+    /**
+     * 构建 URL 尾部的鉴权与格式参数。
+     *
+     * @param token AccessToken，可能为 null 或空
+     * @return 形如 {@code &api_key=xxx&format=jpg} 的字符串
+     */
+    private String appendAuthAndFormat(String token) {
+        StringBuilder sb = new StringBuilder();
+        if (token != null && !token.isEmpty()) {
+            try {
+                sb.append("&api_key=").append(URLEncoder.encode(token, "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                // UTF-8 is always supported; fall back to raw token
+                sb.append("&api_key=").append(token);
+            }
+        }
+        sb.append("&format=jpg");
+        return sb.toString();
     }
 
     @Override
