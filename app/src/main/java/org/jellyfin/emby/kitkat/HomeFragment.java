@@ -104,7 +104,7 @@ public class HomeFragment extends BrowseFragment {
 
         String userId = NetworkManager.getInstance().getUserId();
         NetworkManager.getInstance().getEmbyApiService()
-                .getItems(userId, view.getId(), "Overview,ProductionYear", 20)
+                .getItems(userId, view.getId(), "Overview,ProductionYear,ImageTags", 20)
                 .enqueue(new Callback<EmbyItemsResponse>() {
                     @Override
                     public void onResponse(Call<EmbyItemsResponse> call,
