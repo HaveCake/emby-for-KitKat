@@ -121,23 +121,20 @@ public class CardPresenter extends Presenter {
         // 1. Primary
         if (embyItem.hasImage("Primary")) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
-                    + "/Images/Primary?maxWidth=400&maxHeight=600&quality=80"
-                    + "&tag=" + embyItem.getImageTag("Primary");
+                    + "/Images/Primary?tag=" + embyItem.getImageTag("Primary");
         }
 
         // 2. Thumb
         if (embyItem.hasImage("Thumb")) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
-                    + "/Images/Thumb?maxWidth=400&maxHeight=600&quality=80"
-                    + "&tag=" + embyItem.getImageTag("Thumb");
+                    + "/Images/Thumb?tag=" + embyItem.getImageTag("Thumb");
         }
 
         // 3. Backdrop（使用第一张）
         List<String> backdropTags = embyItem.getBackdropImageTags();
         if (backdropTags != null && !backdropTags.isEmpty()) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
-                    + "/Images/Backdrop/0?maxWidth=400&maxHeight=600&quality=80"
-                    + "&tag=" + backdropTags.get(0);
+                    + "/Images/Backdrop/0?tag=" + backdropTags.get(0);
         }
 
         return null;
