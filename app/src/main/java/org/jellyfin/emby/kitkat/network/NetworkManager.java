@@ -1,8 +1,13 @@
 package org.jellyfin.emby.kitkat.network;
 
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import java.io.IOException;
 
 /**
  * 网络层组装单例。
@@ -62,9 +67,22 @@ public final class NetworkManager {
         authInterceptor = new EmbyAuthInterceptor();
 
         // 2. 基于 SecureOkHttpClientFactory 创建安全的 OkHttpClient，
-        //    并追加 Emby 认证拦截器
+        //    并追加 Emby 认证拦截器和 User-Agent 伪装拦截器
         okHttpClient = SecureOkHttpClientFactory.createBuilder()
                 .addInterceptor(authInterceptor)
+                .addInterceptor(new Interceptor() {
+                    @Override
+                    public Response intercept(Chain chain) throws IOException {
+                        Request original = chain.request();
+                        Request modified = original.newBuilder()
+                                .header("User-Agent",
+                                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                        + "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                        + "Chrome/120.0.0.0 Safari/537.36")
+                                .build();
+                        return chain.proceed(modified);
+                    }
+                })
                 .build();
 
         // 3. 初始化 Retrofit

@@ -37,8 +37,8 @@ import java.util.List;
 public class CardPresenter extends Presenter {
 
     private static final String TAG = "EmkatGlide";
-    private static final int CARD_WIDTH = 313;
-    private static final int CARD_HEIGHT = 176;
+    private static final int CARD_WIDTH = 150;
+    private static final int CARD_HEIGHT = 225;
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent) {
@@ -51,7 +51,7 @@ public class CardPresenter extends Presenter {
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, Object item) {
         EmbyItem embyItem = (EmbyItem) item;
-        ImageCardView cardView = (ImageCardView) viewHolder.view;
+        final ImageCardView cardView = (ImageCardView) viewHolder.view;
 
         cardView.setTitleText(embyItem.getName());
 
@@ -87,8 +87,14 @@ public class CardPresenter extends Presenter {
                     public boolean onLoadFailed(@Nullable GlideException e,
                             Object model, Target<Drawable> target,
                             boolean isFirstResource) {
-                        Log.e(TAG, "海报加载失败: "
-                                + (e != null ? e.getMessage() : "unknown"), e);
+                        final String errorMsg = e != null ? e.getMessage() : "Unknown Error";
+                        Log.e(TAG, "海报加载失败: " + errorMsg, e);
+                        new android.os.Handler(android.os.Looper.getMainLooper()).post(new Runnable() {
+                            @Override
+                            public void run() {
+                                cardView.setContentText("异常: " + errorMsg);
+                            }
+                        });
                         return false; // 让 Glide 继续显示 error placeholder
                     }
 
