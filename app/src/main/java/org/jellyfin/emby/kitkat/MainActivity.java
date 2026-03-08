@@ -1,5 +1,6 @@
 package org.jellyfin.emby.kitkat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.ScrollingMovementMethod;
@@ -128,6 +129,12 @@ public class MainActivity extends AppCompatActivity {
                             NetworkManager.getInstance()
                                     .getAuthInterceptor()
                                     .setAccessToken(token);
+
+                            // 跳转到 Leanback 海报墙主界面
+                            Intent intent = new Intent(MainActivity.this,
+                                    HomeActivity.class);
+                            startActivity(intent);
+                            finish();
                         } else {
                             appendLog("❌ 登录失败: HTTP " + response.code());
                             try {
