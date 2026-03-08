@@ -32,7 +32,8 @@ import java.util.List;
  * <p>
  * 鉴权方式：通过 URL Query 参数 {@code api_key} 传递 Token，
  * 兼容 CDN / 反向代理剥离自定义 Header 的场景。
- * 同时追加 {@code format=jpg} 强制服务端输出 JPEG，兼容 Android 4.4。
+ * 不追加任何转码参数（如 format/maxWidth/quality），请求最原始的图片，
+ * 避免服务端转码引擎触发 HTTP 500。
  */
 public class CardPresenter extends Presenter {
 
@@ -87,12 +88,16 @@ public class CardPresenter extends Presenter {
                     public boolean onLoadFailed(@Nullable GlideException e,
                             Object model, Target<Drawable> target,
                             boolean isFirstResource) {
+                        final String errorUrl = model != null ? model.toString() : "null";
                         final String errorMsg = e != null ? e.getMessage() : "Unknown Error";
                         Log.e(TAG, "海报加载失败: " + errorMsg, e);
                         new android.os.Handler(android.os.Looper.getMainLooper()).post(new Runnable() {
                             @Override
                             public void run() {
                                 cardView.setContentText("异常: " + errorMsg);
+                                android.widget.Toast.makeText(cardView.getContext(),
+                                        "失败URL: " + errorUrl + " \n原因: " + errorMsg,
+                                        android.widget.Toast.LENGTH_LONG).show();
                             }
                         });
                         return false; // 让 Glide 继续显示 error placeholder
@@ -115,7 +120,7 @@ public class CardPresenter extends Presenter {
      * 并在查询参数中附带 {@code tag} 以利用服务端缓存。
      * <p>
      * 鉴权通过 {@code api_key} 查询参数完成，兼容 CDN / 反向代理。
-     * 追加 {@code format=jpg} 强制服务端输出 JPEG，兼容 Android 4.4。
+     * 不追加任何转码参数，请求原始图片。
      *
      * @param embyItem 媒体项
      * @return 图片 URL，无可用图片时返回 null
@@ -129,14 +134,14 @@ public class CardPresenter extends Presenter {
         if (embyItem.hasImage("Primary")) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
                     + "/Images/Primary?tag=" + embyItem.getImageTag("Primary")
-                    + appendAuthAndFormat(token);
+                    + appendAuth(token);
         }
 
         // 2. Thumb
         if (embyItem.hasImage("Thumb")) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
                     + "/Images/Thumb?tag=" + embyItem.getImageTag("Thumb")
-                    + appendAuthAndFormat(token);
+                    + appendAuth(token);
         }
 
         // 3. Backdrop（使用第一张）
@@ -144,19 +149,19 @@ public class CardPresenter extends Presenter {
         if (backdropTags != null && !backdropTags.isEmpty()) {
             return normalizedBaseUrl + "Items/" + embyItem.getId()
                     + "/Images/Backdrop/0?tag=" + backdropTags.get(0)
-                    + appendAuthAndFormat(token);
+                    + appendAuth(token);
         }
 
         return null;
     }
 
     /**
-     * 构建 URL 尾部的鉴权与格式参数。
+     * 构建 URL 尾部的鉴权参数。
      *
      * @param token AccessToken，可能为 null 或空
-     * @return 形如 {@code &api_key=xxx&format=jpg} 的字符串
+     * @return 形如 {@code &api_key=xxx} 的字符串
      */
-    private String appendAuthAndFormat(String token) {
+    private String appendAuth(String token) {
         StringBuilder sb = new StringBuilder();
         if (token != null && !token.isEmpty()) {
             try {
@@ -166,7 +171,6 @@ public class CardPresenter extends Presenter {
                 sb.append("&api_key=").append(token);
             }
         }
-        sb.append("&format=jpg");
         return sb.toString();
     }
 
