@@ -1,0 +1,1221 @@
+03-08 13:15:09.889 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:09.889 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:09.889 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:09.889 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:09.890 I/Booster_OllieObserver( 4170): notify registrants event: EVENT_QOE_INFO_CHANGED
+03-08 13:15:09.893 D/DataSampleChr( 4170): Phy TX 0 RX 0
+03-08 13:15:09.893 D/DataSampleChr( 4170): L2 TX 0 RX 0
+03-08 13:15:09.893 D/DataSampleChr( 4170): Trans TX 0 RX 0
+03-08 13:15:09.893 D/DataSampleChr( 4170): Cur time 1772946909893
+03-08 13:15:09.893 D/DataSampleChr( 4170): qoeReason 0 subReason 0
+03-08 13:15:09.893 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407590/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:09.893 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.893 W/Glide   (23406): There was 1 cause:
+03-08 13:15:09.893 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.893 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.893 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.893 W/Glide   (23406): There was 1 cause:
+03-08 13:15:09.893 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.893 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.893 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.893 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:09.893 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.893 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:09.893 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:09.893 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:09.893 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:09.893 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:09.893 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:09.894 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:09.894 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.894 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.894 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.894 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.894 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.894 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.894 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.894 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.894 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.894 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.894 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.894 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.895 D/Linkturbo_NetworkQoeManager( 4170): getChannelQuality: {"channelId":1,"qoeLevel":4,"reason":0}
+03-
+08 13:15:09.895 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/6389/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:09.895 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.895 W/Glide   (23406): There was 1 cause:
+03-08 13:15:09.895 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.895 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.895 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.895 W/Glide   (23406): There was 1 cause:
+03-08 13:15:09.895 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.895 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.895 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.895 D/Linkturbo_NetworkQoeManager( 4170): getChannelQuality: {"channelId":0,"qoeLevel":4,"reason":0}
+03-08 13:15:09.896 I/Linkturbo_EmcomUtils( 4170): multipathPolicy is null
+03-08 13:15:09.896 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:09.896 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.896 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:09.896 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:09.896 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:09.896 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:09.896 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:09.896 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:09.896 D/Linkturbo_PolicyCenter( 4170): update rssi from qoe
+03-08 13:15:09.896 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:09.896 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.896 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.896 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.896 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.896 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.896 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.896 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.896 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.896 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.896 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.896 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.896 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.897 I/NetworkQoeMonitor( 4170): dataQualityReport:10254,4,0,0,2,0,4,0,200,0,0,0,10,0,0,0,0,2,4,0,0,52000,117000,10,10,0,26,53,0,0,2,768000,1048576,-53; channelQos: 2,0,0,4,0,0,0,0,2,6,6,7,0,0,0; subReason: 0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0; appDetectedRules: 0,0,0,0; flowQuality: 10254,2,-1,-1,-1; faultType: 0; faultDomain: 0; appQoe confidence: -1
+03-08 13:15:09.898 D/UserSceneNetworkSpeedStats( 4170): handleQoeInfoChanged, uid: 10254, qoeSpeedRecordNum: 8, RX: 0 kbps, TX: 0 kbps
+
+03-08 13:15:09.915 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:09.915 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.915 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:09.915 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:09.915 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:09.915 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:09.915 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:09.915 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:09.916 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:09.916 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.916 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.916 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.916 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.916 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.916 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.916 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.916 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.916 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.916 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.916 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.916 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:09.917 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:09.917 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.917 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:09.917 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:09.917 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:09.917 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:09.917 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:09.917 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:09.918 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:09.918 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.918 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.918 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.918 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.918 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.918 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.918 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.918 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.918 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.918 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.918 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.918 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:09.919 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:09.919 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:09.919 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:09.919 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:09.919 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:09.919 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:09.919 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:09.919 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:09.920 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:09.920 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.920 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.920 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.920 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:09.920 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.920 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.920 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.920 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:09.920 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:09.920 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:09.920 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:09.920 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:10.110 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:10.110 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.110 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.110 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.110 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.110 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.110 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.110 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.110 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.110 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.110 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.110 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.110 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.110 D/OkHttp  (23406): <-- 200 https://media.micu.hk/Users/004c7e620c2e489ca7d7155894e1c639/Items?ParentId=2607&Fields=Overview%2CProductionYear&Limit=20 (506ms, unknown-length body)
+
+03-08 13:15:10.359 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:10.359 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.359 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:10.359 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:10.359 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:10.359 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:10.359 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:10.359 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:10.359 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:10.359 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.359 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.359 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.359 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.359 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.359 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.359 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.359 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.359 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.359 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.359 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.359 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:10.361 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:10.361 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.361 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:10.361 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:10.361 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:10.361 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:10.361 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:10.361 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:10.362 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+
+03-08 13:15:10.362 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.362 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.362 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.362 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.362 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.362 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.362 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.362 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.362 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.362 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.362 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.362 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:10.686 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:10.686 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:10.686 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:10.687 I/SDM     ( 2017): HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+03-08 13:15:10.687 I/PowerManagerService( 2919): need release WakeLockSuspendBlocker
+03-08 13:15:10.690 I/PowerManagerService( 2919): Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-08 13:15:10.690 I/power   ( 2919): release wakelock: PowerManagerService.WakeLocks
+03-08 13:15:10.690 I/android.system.suspend-service( 1185): decSuspendCounter-- success,name:PowerManagerService.WakeLocks mUseSuspendCounter:1 mSuspendCounter:3: Success
+03-08 13:15:10.691 D/AWARENESS_RedEnvelopeAbility( 6754): publish RedEnvelopeBean PackageName=com.follow.clash
+03-08 13:15:10.691 D/AWARENESS_RedEnvelopeFence( 6754): onDataReceive data=200022001
+03-08 13:15:10.691 E/AWARENESS_RedEnvelopeFence( 6754): not subscripPackageName or subscripMsgContent=com.follow.clash
+03-08 13:15:10.692 I/NotificationListener( 3973): onNotificationPosted: sbn.key=0|com.follow.clash|1|null|10283 important=2, flags 106, post=1772946910460, when=1772945163892,showWhen=true, vis=0, hasFullScreenIntent=false, style=null, isNonDismissable=false
+03-08 13:15:10.692 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/2606/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:10.692 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.692 W/Glide   (23406): There was 1 cause:
+03-08 13:15:10.692 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.692 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.692 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.692 W/Glide   (23406): There was 1 cause:
+03-08 13:15:10.692 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.692 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.692 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.693 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:10.693 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.693 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:10.693 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:10.693 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:10.693 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:10.693 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:10.693 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:10.693 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:10.693 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.693 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.693 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.693 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.693 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.693 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.693 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.693 E/EmkatGlide(23406):
+   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.693 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.693 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.693 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.693 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.693 W/MediaDataManager( 3973): onNotificationAdded key:0|com.follow.clash|1|null|10283 isMediaNotification:falseuseQsMediaPlayer istrue
+03-08 13:15:10.694 I/MediaDataManager( 3973): isCustomMediaNoti, key:0|com.follow.clash|1|null|10283 false
+03-08 13:15:10.694 I/GlobalDynCoordinator( 3973): pkgName = com.follow.clash channel = FlClash
+03-08 13:15:10.694 I/GlobalDynCoordinator( 3973): Updated, entry is disabled
+03-08 13:15:10.694 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407592/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:10.694 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.694 W/Glide   (23406): There was 1 cause:
+03-08 13:15:10.694 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.694 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.694 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.694 W/Glide   (23406): There was 1 cause:
+03-08 13:15:10.694 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.694 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.694 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.695 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:10.695 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.695 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:10.695 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:10.695 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:10.695 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:10.695 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:10.695 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:10.695 W/HwNotificationEntryObserver( 3973): reportNT failed, more than 2000, sbn=0|com.follow.clash|1|null|10283
+03-08 13:15:10.695 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:10.695 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.695 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.695 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.695 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.695 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.695 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.695 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.695 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.695 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.695 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.695 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.695 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.696 I/NotifySyncService_14100_14971(14100): MSG_NOTIF
+03-08 13:15:10.911 I/Advanced_Booster_Qoe( 4170): EvalBandWidthandDelay RbRatio:0.283981., DlOtaEstRate:0 kbps, UlOtaEstRate:-1 kbps, ulDelay:0 ms
+03-08 13:15:10.911 D/Advanced_Booster_Qoe( 4170): Rule101CorrectEvalResCellPdcpLoss, upPktLossRate:0, upLinkRate:0
+03-08 13:15:10.911 D/Advanced_Booster_Qoe( 4170): channel Index:2
+03-08 13:15:10.911 D/Calculate_Wifi_Bandwidth( 4170): SmoothWifiChannelParameters, alpha is: 0.500000.
+03-08 13:15:10.911 D/Calculate_Wifi_Bandwidth( 4170): SmoothWifiChannelParameters, smoothed data, chload: 51, rssi: -51, phyRxRate: 891 100kbps, phyTxRate: 532 100kbps.
+03-08 13:15:10.911 D/Calculate_Wifi_Bandwidth( 4170): CalcChannelBandwidthByRatio, isDownLink: 1, calculated result is: 591.891296 100kbps.
+03-08 13:15:10.911 D/Calculate_Wifi_Bandwidth( 4170): CalcChannelBandwidthByRatio, isDownLink: 0, calculated result is: 353.407593 100kbps.
+03-08 13:15:10.911 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:10.911 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.911 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.911 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.911 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.911 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.911 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.911 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.911 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.911 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.911 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.911 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.911 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.911 I/Advanced_Booster_Qoe( 4170): AdvancedQoeInfo: 10254,4,0,0,2,0,4,0,200,0,0,0,10,0,0,0,0,2,4,0,0,52000,78000,10,10,0,31,106,0,0,2,0,0,0,-51; subReason: 0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0; detectedRules: 0,0,0,0,2,0,0,0,0,0,2,0,0,0,0
+
+03-08 13:15:10.913 D/NetworkQoeRca( 4170): appQoeInfo set faultType: 0
+03-08 13:15:10.913 D/NetworkQoeRca( 4170): appQoeInfo set faultDomain: 0
+03-08 13:15:10.913 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407593/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:10.913 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.913 W/Glide   (23406): There was 1 cause:
+03-08 13:15:10.913 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.913 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.913 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.913 W/Glide   (23406): There was 1 cause:
+03-08 13:15:10.913 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.913 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.913 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.914 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:10.914 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.914 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:10.914 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:10.914 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:10.914 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:10.914 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:10.914 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:10.914 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:10.914 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.914 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.914 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.914 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:10.914 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.914 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.914 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.914 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:10.914 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:10.914 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:10.914 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:10.914 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:10.914 I/Booster_OllieObserver( 4170): notify registrants event: EVENT_QOE_INFO_CHANGED
+
+03-08 13:15:11.159 W/Glide   (23406): There was 1 cause:
+03-08 13:15:11.159 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.159 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.159 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.159 W/Glide   (23406): There was 1 cause:
+03-08 13:15:11.159 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.159 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.159 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.160 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:11.160 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.160 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:11.160 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:11.160 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:11.160 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:11.160 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:11.160 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:11.162 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/9998/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (252ms, 43-byte body)
+03-08 13:15:11.163 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:11.163 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.163 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.163 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.163 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.163 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.163 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.163 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.163 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.163 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.163 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.163 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.163 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.164 D/OkHttp  (23406): --> GET https://media.micu.hk/Items/407595/Images/Primary?maxWidth=400&maxHeight=600&quality=80
+03-08 13:15:11.168 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.168 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.168 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.168 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/9998/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:11.168 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.168 W/Glide   (23406): There was 1 cause:
+03-08 13:15:11.168 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.168 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+
+03-08 13:15:11.172 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:11.172 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.172 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.172 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.172 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.172 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.172 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.172 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.172 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.172 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.172 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.172 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.172 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:11.444 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:11.444 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.444 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.444 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.444 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.444 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.444 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.444 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+
+03-08 13:15:11.444 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.444 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.444 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.444 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.444 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:11.452 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:11.452 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.452 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:11.452 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:11.452 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:11.452 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:11.452 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:11.452 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:11.453 I/SnapAlloc( 2017): DEBUG ValidateDescriptor- Received width = 256, height = 90, format = 3, usage = 0x20000800
+03-08 13:15:11.453 W/SnapAlloc( 2017): Failed to get format mapping to use mmm_color_fmt
+03-08 13:15:11.453 W/SnapAlloc( 2017): Error while getting constraints from display libs width 256, height 90, format 3
+03-08 13:15:11.455 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:11.455 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.455 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.455 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.455 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.455 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.455 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.455 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.455 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.455 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.455 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.455 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.455 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:11.667 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.667 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.667 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.669 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/2639/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (234ms, 43-byte body)
+03-08 13:15:11.671 D/OkHttp  (23406): --> GET https://media.micu.hk/Items/7056/Images/Primary?maxWidth=400&maxHeight=600&quality=80
+03-08 13:15:11.672 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/2639/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:11.672 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.672 W/Glide   (23406): There was 1 cause:
+03-08 13:15:11.672 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.672 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.672 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.672 W/Glide   (23406): There was 1 cause:
+03-08 13:15:11.672 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.672 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.672 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.672 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:11.672 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.672 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:11.672 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:11.672 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:11.672 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:11.672 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:11.672 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:11.673 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:11.673 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.673 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.673 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.673 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.673 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.673 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.673 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.673 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.673 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.673 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.673 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.673 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.678 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/407596/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (234ms, 45-byte body)
+03-08 13:15:11.680 D/OkHttp  (23406): --> GET https://media.micu.hk/Items/407597/Images/Primary?maxWidth=400&maxHeight=600&quality=80
+
+03-08 13:15:11.699 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:11.699 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.699 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:11.699 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:11.699 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:11.699 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:11.699 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:11.699 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:11.700 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:11.700 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.700 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.700 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.700 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:11.700 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.700 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.700 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.700 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:11.700 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:11.700 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:11.700 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:11.700 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:11.700 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.700 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.700 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:11.700 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+
+03-08 13:15:14.322 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.322 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.322 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.322 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.322 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.322 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.322 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.322 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.322 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.322 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.322 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.322 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.322 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.323 D/OkHttp  (23406): --> GET https://media.micu.hk/Items/407598/Images/Primary?maxWidth=400&maxHeight=600&quality=80
+03-08 13:15:14.324 D/OkHttp  (23406): <-- 500 https://media.micu.hk/Items/216355/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (4419ms, 53-byte body)
+03-08 13:15:14.325 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.325 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.326 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.326 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.327 D/OkHttp  (23406): <-- 500 https://media.micu.hk/Items/123604/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (4448ms, 53-byte body)
+03-08 13:15:14.328 D/OkHttp  (23406): <-- 500 https://media.micu.hk/Items/136126/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (4424ms, 53-byte body)
+
+03-08 13:15:14.352 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:14.352 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.352 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:14.352 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:14.352 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:14.352 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:14.352 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:14.352 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:14.353 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.353 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.353 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.353 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.353 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.353 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.353 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.353 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.353 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.353 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.353 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.353 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.353 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:14.356 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:14.356 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.356 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:14.356 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:14.356 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:14.356 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:14.356 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:14.356 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:14.357 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.357 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.357 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.357 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.357 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.357 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.357 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.357 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.357 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.357 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.357 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.357 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.357 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.358 I/VariableRefreshRateHandler( 2076): setCurrentSignals: scored layer size: 2
+03-08 13:15:14.358 I/VariableRefreshRateHandler( 2076): setCurrentSignals: layerName org.jellyfin.emby.kitkat/org.jellyfin.emby.kitkat.HomeActivity#19399, type Default, desiredRefreshRate 60.00
+03-08 13:15:14.358 I/VariableRefreshRateHandler( 2076): setCurrentSignals: layerName com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346, type Heuristic, desiredRefreshRate 60.00
+03-08 13:15:14.359 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.359 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.359 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.359 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/136126/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:14.359 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.359 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.359 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.359 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.359 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.359 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.359 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.359 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.359 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.359 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.360 I/Glide   (23406): Root cau
+se (1 of 1)
+03-08 13:15:14.360 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.360 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:14.360 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:14.360 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:14.360 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:14.360 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:14.360 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:14.360 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.360 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.360 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.360 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.360 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.360 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.360 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.360 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.360 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.360 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.360 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.360 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.360 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.361 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/7056/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:14.361 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.361 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.361 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.361 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.361 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.361 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.361 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.361 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.361 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.361 I/SnapAlloc( 2017): DEBUG ValidateDescriptor- Received width = 256, height = 90, format = 3, usage = 0x20000800
+03-08 13:15:14.362 W/SnapAlloc( 2017): Failed to get format mapping to use mmm_color_fmt
+03-08 13:15:14.362 W/SnapAlloc( 2017): Error while getting constraints from display libs width 256, height 90, format 3
+
+03-08 13:15:14.362 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:14.362 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.362 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:14.362 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:14.362 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:14.362 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:14.362 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:14.362 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:14.362 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.362 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.362 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.362 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.362 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.362 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.362 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.362 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.362 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.362 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.362 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.362 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.362 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:14.589 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/28826/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:14.589 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.589 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.589 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.589 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.589 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.589 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.589 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.589 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.589 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.590 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:14.590 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.590 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:14.590 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:14.590 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:14.590 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:14.590 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:14.590 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:14.591 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.591 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.591 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.591 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.591 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.591 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.591 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.591 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.591 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.591 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.591 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.591 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.591 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.591 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.591 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.591 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:14.591 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+
+03-08 13:15:14.593 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407598/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:14.593 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.593 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.593 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.593 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.593 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.593 W/Glide   (23406): There was 1 cause:
+03-08 13:15:14.593 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.593 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.593 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.594 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:14.594 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:14.594 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:14.594 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:14.594 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:14.594 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:14.594 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:14.594 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:14.595 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:14.595 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.595 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.595 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.595 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:14.595 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.595 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.595 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.595 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:14.595 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:14.595 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:14.595 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:14.595 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:29.973 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:29.973 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:29.973 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:29.973 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:29.973 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:29.973 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:29.973 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:29.973 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:29.973 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:29.973 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:29.973 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:29.973 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:29.973 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:29.974 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/9998/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (214ms, 43-byte body)
+03-08 13:15:29.975 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/407592/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (215ms, 45-byte body)
+
+03-08 13:15:29.983 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:29.983 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:29.983 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:29.983 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:29.983 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:29.983 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:29.983 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:29.983 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:29.984 I/Ads     (23857): Use RequestConfiguration.Builder().setTestDeviceIds(Arrays.asList("4E51D01961483853153748F4A029607B")) to get test ads on this device.
+03-08 13:15:29.986 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:29.986 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:29.986 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:29.986 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:29.986 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:29.986 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:29.986 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:29.986 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:29.986 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:29.986 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:29.986 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:29.986 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:29.986 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:29.987 I/sensors-hal( 1851): handle_sns_std_sensor_event:170, ambient_light_event: ts=35170478401592, lux = 60, cct=5721, aod=1542,1352 5721 1048 4892 512 0 0 0 0 0 0 0 0
+
+03-08 13:15:30.003 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.003 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.003 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.003 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.003 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.003 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.003 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.003 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.003 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.003 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.003 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.003 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.003 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.007 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/9998/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:30.007 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.007 W/Glide   (23406): There was 1 cause:
+03-08 13:15:30.007 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.007 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.007 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.007 W/Glide   (23406): There was 1 cause:
+03-08 13:15:30.007 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.007 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.007 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.009 I/Glide   (23406): Root cause (1 of 1)
+
+03-08 13:15:30.009 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.009 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:30.009 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:30.009 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:30.009 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:30.009 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:30.009 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:30.009 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.009 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.009 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.009 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.009 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.009 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.009 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.009 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.009 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.009 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.009 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.009 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.009 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.010 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407592/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:30.010 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.010 W/Glide   (23406): There was 1 cause:
+03-08 13:15:30.010 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.010 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.010 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.010 W/Glide   (23406): There was 1 cause:
+03-08 13:15:30.010 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.010 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.010 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.011 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:30.011 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.011 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:30.011 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:30.011 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:30.011 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:30.011 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:30.011 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+
+03-08 13:15:30.011 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.011 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.011 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.011 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.011 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.011 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.011 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.011 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.011 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.011 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.011 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.011 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.011 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.012 V/AudioManager(23857): getMode...
+03-08 13:15:30.013 I/AS.AudioService( 2919): getMode mode = 0
+03-08 13:15:30.013 V/AudioManager(23857): isMusicActive...
+03-08 13:15:30.014 W/ServiceBindIntentUtils(23857): Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.CACHE
+03-08 13:15:30.014 W/AudioPolicyService( 2058):  [1000] is the service
+
+03-08 13:15:30.145 E/libc    (25054): SetHeapTaggingLevel: re-enabling tagging after it was disabled is not supported
+03-08 13:15:30.151 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/407595/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (182ms, 45-byte body)
+03-08 13:15:30.152 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407595/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:30.152 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.152 W/Glide   (23406): There was 1 cause:
+03-08 13:15:30.152 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.152 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.152 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.152 W/Glide   (23406): There was 1 cause:
+03-08 13:15:30.152 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.152 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.152 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.152 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/3936/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (185ms, 43-byte body)
+03-08 13:15:30.152 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:30.152 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.152 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:30.152 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:30.152 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:30.152 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:30.152 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:30.152 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:30.153 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.153 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.153 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.153 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.153 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.153 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.153 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.153 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.153 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.153 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.153 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.153 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.153 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.154 I/Zygote  (25054): CallStaticVoidMethod
+
+03-08 13:15:30.176 I/WifiEnhanceMonitor( 2919): notifyUidStateChanged
+03-08 13:15:30.176 E/WifiEnhanceUtils( 2919): Failed to get pkgName from 99046 ,pkgNames is null or empty
+03-08 13:15:30.177 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.177 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.177 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.177 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.177 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.177 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.177 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.177 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.177 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.177 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.177 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.177 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.177 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:30.183 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:30.183 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:30.183 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.183 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.183 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.183 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.183 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.183 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.183 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.183 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.183 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.183 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.183 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.183 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.183 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:30.184 E/HwApsManager(25054): checkApsManagerService->service is not started yet
+
+03-08 13:15:30.190 E/HwApsManager(25054): checkApsManagerService->service is not started yet
+03-08 13:15:30.190 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.190 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.190 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.190 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.190 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.190 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.190 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.190 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.190 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.190 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.190 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.190 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.190 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:30.196 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:30.196 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.196 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.196 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.196 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:30.196 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.196 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.196 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.196 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:30.196 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:30.196 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:30.196 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:30.196 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:33.835 D/OkHttp  (23406): --> GET https://media.micu.hk/Items/9998/Images/Primary?maxWidth=400&maxHeight=600&quality=80
+03-08 13:15:33.836 I/PNP-NMS-10.0.19.316-19065078-NotificationResultProcessor( 2919): msg://com.follow.clash/com.follow.clash?style=100011100101&prob=69&pass=true&reason=Success
+03-08 13:15:33.836 E/afehal  ( 2121): Send cmd:C7 3A 
+03-08 13:15:33.836 D/vendor.honor.hardware.aoservice-service( 1930): [AO_SVC] (reopen_timer_handler:52):enter reopen handler
+03-08 13:15:33.836 D/OkHttp  (23406): --> GET https://media.micu.hk/Items/407596/Images/Primary?maxWidth=400&maxHeight=600&quality=80
+03-08 13:15:33.837 E/afehal  ( 2121): Set timeout=1300ms.
+03-08 13:15:33.838 I/PNP-NMS-10.0.19.316-19065078-NcRecordDbDataSource( 2919): addOrUpdate:1
+03-08 13:15:33.838 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/407593/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (229ms, 45-byte body)
+03-08 13:15:33.838 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:33.838 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.838 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.838 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.838 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:33.838 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.838 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.838 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.838 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:33.838 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.838 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.838 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.838 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:33.849 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:33.849 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.849 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.849 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.849 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:33.849 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.849 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.849 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.849 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:33.849 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.849 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.849 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.849 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:33.859 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:33.859 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.859 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.859 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.859 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:33.859 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.859 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.859 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.859 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:33.859 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.859 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.859 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.859 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:33.865 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:33.866 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:33.867 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:33.867 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.867 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.867 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.867 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:33.867 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.867 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.867 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.867 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:33.867 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.867 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.867 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.867 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:33.875 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:33.875 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.875 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.875 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.875 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:33.875 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.875 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.875 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.875 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:33.875 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:33.875 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:33.875 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:33.875 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:34.048 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:34.048 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.048 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.048 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.048 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.048 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.048 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.048 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.048 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.048 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.048 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.048 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.048 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+
+03-08 13:15:34.074 I/NotificationListener( 3973): onNotificationPosted: sbn.key=0|com.follow.clash|1|null|10283 important=2, flags 106, post=1772946933831, when=1772945163892,showWhen=true, vis=0, hasFullScreenIntent=false, style=null, isNonDismissable=false
+03-08 13:15:34.075 W/MediaDataManager( 3973): onNotificationAdded key:0|com.follow.clash|1|null|10283 isMediaNotification:falseuseQsMediaPlayer istrue
+03-08 13:15:34.075 I/MediaDataManager( 3973): isCustomMediaNoti, key:0|com.follow.clash|1|null|10283 false
+03-08 13:15:34.075 I/GlobalDynCoordinator( 3973): pkgName = com.follow.clash channel = FlClash
+03-08 13:15:34.075 I/GlobalDynCoordinator( 3973): Updated, entry is disabled
+03-08 13:15:34.076 W/HwNotificationEntryObserver( 3973): reportNT failed, more than 2000, sbn=0|com.follow.clash|1|null|10283
+03-08 13:15:34.077 D/AWARENESS_RedEnvelopeAbility( 6754): publish RedEnvelopeBean PackageName=com.follow.clash
+03-08 13:15:34.078 D/AWARENESS_RedEnvelopeFence( 6754): onDataReceive data=200022001
+03-08 13:15:34.078 E/AWARENESS_RedEnvelopeFence( 6754): not subscripPackageName or subscripMsgContent=com.follow.clash
+03-08 13:15:34.079 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.079 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.079 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.079 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.081 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407596/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:34.081 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.081 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.081 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.081 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.081 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.081 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.081 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.081 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.081 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.082 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:34.082 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.082 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:34.082 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:34.082 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:34.082 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:34.082 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:34.082 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:34.082 E/PowerLogWrite( 2919): write new power event, from uid:1000,tag:161,msg:10283|1|-2|NotificationManagerService:post:com.follow.clash
+03-08 13:15:34.083 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:34.083 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.083 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.083 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.083 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load 
+resource
+03-08 13:15:34.083 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.083 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.083 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.083 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.083 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.083 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.083 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.083 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.083 I/PowerManagerService( 2919): need release WakeLockSuspendBlocker
+03-08 13:15:34.083 I/PowerManagerService( 2919): Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-08 13:15:34.083 D/HnNotificationUtils( 3973): SmallIconBitMapMaxSize:112
+03-08 13:15:34.083 I/HnNotificationUtils( 3973): getAppSmallIconInfo#use app icon:pkgName=com.follow.clash
+03-08 13:15:34.083 I/power   ( 2919): release wakelock: PowerManagerService.WakeLocks
+03-08 13:15:34.083 I/android.system.suspend-service( 1185): decSuspendCounter-- success,name:PowerManagerService.WakeLocks mUseSuspendCounter:1 mSuspendCounter:3: Success
+03-08 13:15:34.084 D/OkHttp  (23406): <-- 404 https://media.micu.hk/Items/2639/Images/Primary?maxWidth=400&maxHeight=600&quality=80 (243ms, 43-byte body)
+03-08 13:15:34.086 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/407595/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:34.086 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.086 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.086 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.086 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.086 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.086 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.086 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.086 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.086 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.087 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:34.087 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.087 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:34.087 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:34.087 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:34.087 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:34.087 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:34.087 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:34.088 D/TileViewModel( 3973): getQQSTileHeight:217 isNoLabelContainer：true
+03-08 13:15:34.088 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:34.088 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.088 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.088 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.088 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.088 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.088 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.088 E/EmkatGlide(23406):  call GlideException#logRootCau
+ses(String) for more detail
+03-08 13:15:34.088 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.088 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.088 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.088 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.088 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.088 D/HnQSPanelViewModel( 3973): getQQSHeight isLabelHidden:true qqsHeight:507 tileHeight:217 vMargin:59 resRow:2 topBottomPadding:7
+03-08 13:15:34.088 D/TileViewModel( 3973): getQQSTileHeight:217 isNoLabelContainer：true
+03-08 13:15:34.088 D/HnQSPanelViewModel( 3973): getFullExpandHeight tileNumbers:29 rows:8, verticalMargin：59 tileHeight:217 height:2149 true
+03-08 13:15:34.090 W/Glide   (23406): Load failed for https://media.micu.hk:443/Items/8857/Images/Primary?maxWidth=400&maxHeight=600&quality=80 with size [313x176]
+03-08 13:15:34.090 W/Glide   (23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.090 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.090 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.090 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.090 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.090 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.090 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.090 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.090 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.090 I/NotifySyncService_14100_14971(14100): MSG_NOTIFY_POSTED 
+03-08 13:15:34.090 I/NotifySyncService_14100_14971(14100): onNotificationPosted Id:1 key:0|com.follow.clash|1|null|10283 PackageName:com.follow.clash IsOngoing:true PostTime:1772946933831 currentDeviceModel.connected: true
+03-08 13:15:34.091 I/HWUI    ( 3973): android_view_RenderNode_setLayerType NotificationContentView, LayerType 0
+03-08 13:15:34.091 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:34.091 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.091 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:34.091 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:34.091 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:34.091 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:34.091 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:34.091 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:34.092 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:34.092 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.092 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.092 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.092 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.092 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.092 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.092 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.092 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.092 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.092 E/EmkatGlide(23406): com.bumpte
+ch.glide.load.HttpException()
+03-08 13:15:34.092 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.092 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.092 I/NotifySyncService_14100_14971(14100): onNotificationPosted Id:1 , appName : FlClash
+03-08 13:15:34.093 I/NotifyLogUtils_14100_32659(14100): isIgnoringBatteryOptimizations false
+03-08 13:15:34.094 I/AccountManagerService_14100_10494(14100): log: getAccounts: accountType com.xiaomi, caller's uid 10447, pid 14100
+03-08 13:15:34.094 I/NotifySyncService_14100_14971(14100):  isOngoing = true isIncomingCall = false
+03-08 13:15:34.094 I/HwNotificationEx( 3973): preActionButton
+03-08 13:15:34.094 I/SecureDatabase_14100_10494(14100): log: query: accounts, columns=[_id,type,name], selection=null, selectionArgs=null, groupBy=null, having=null, orderBy=null, limit=null
+03-08 13:15:34.094 I/SecureDatabase_14100_10494(14100): log: query: cursor count=1
+03-08 13:15:34.095 I/SecureDatabase_14100_10494(14100): log: query: row=[1,com.xiaomi,2752253847]
+03-08 13:15:34.095 I/AccountManagerService_14100_10494(14100): log: validateAccountsAndPopulateCache>>>accountId=1 accountType=com.xiaomi accountName=2752253847
+03-08 13:15:34.095 I/AccountManagerService_14100_10494(14100): log: getAccounts: accountType com.xiaomi, caller's uid 10447, pid 14100
+03-08 13:15:34.095 I/AccountManagerService_14100_32659(14100): log: getAccounts: accountType com.xiaomi, caller's uid 10447, pid 14100
+03-08 13:15:34.095 I/SecureDatabase_14100_10494(14100): log: query: accounts, columns=[_id,type,name], selection=null, selectionArgs=null, groupBy=null, having=null, orderBy=null, limit=null
+03-08 13:15:34.095 I/SecureDatabase_14100_10494(14100): log: query: cursor count=1
+03-08 13:15:34.096 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.096 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.096 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.096 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.097 I/SecureDatabase_14100_10494(14100): log: query: row=[1,com.xiaomi,2752253847]
+03-08 13:15:34.097 I/osfingersense( 2919): wait_tp_event: tp
+03-08 13:15:34.098 I/osfingersense( 2919): wait_tp_event: wait tp event in: 19079160864
+03-08 13:15:34.098 I/sensors-hal( 1851): input_event_handler:575, input event type = 4
+03-08 13:15:34.098 I/sensors-hal( 1851): input_event_handler:577, type=4 4 1000
+03-08 13:15:34.098 I/sensors-hal( 1851): input_event_handler:581, Sending request to get fs_data
+03-08 13:15:34.098 I/sensors-hal( 1851): send_finger_enable_req:186, send_finger_enable_req: start, req flag = 1000
+03-08 13:15:34.098 I/sensors-hal( 1851): register_cb:333, update callbacks with new one
+03-08 13:15:34.098 I/aptouch_daemon( 2121): print_log, touch:1, TGA_DAE_DOWN:1 (+0)
+03-08 13:15:34.098 I/sensors-hal( 1851): input_event_handler:584, Fs_data req data flag
+03-08 13:15:34.098 D/fingersense_manager( 2919): Calling fingersense_classify_touch()
+03-08 13:15:34.098 I/sensors-hal( 1851): input_event_handler:575, input event type = 0
+03-08 13:15:34.098 I/AccountManagerService_14100_10494(14100): log: validateAccountsAndPopulateCache>>>accountId=1 accountType=com.xiaomi accountName=2752253847
+03-08 13:15:34.099 I/VendorButton( 3973): Auto size enable is false
+03-08 13:15:34.099 I/SecureDatabase_14100_32659(14100): log: query: accounts, columns=[_id,type,name], selection=null, selectionArgs=null, groupBy=null, having=null, orderBy=null, limit=null
+03-08 13:15:34.099 I/SecureDatabase_14100_32659(14100): log: query: cursor count=1
+
+03-08 13:15:34.108 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.108 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.108 W/Glide   (23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.108 W/Glide   (23406): There was 1 cause:
+03-08 13:15:34.108 W/Glide   (23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.108 W/Glide   (23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.108 W/Glide   (23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.108 I/SurfaceFlingerEx( 2076): notifyVrrBoost VRR 1 --- 0
+03-08 13:15:34.108 I/Scheduler( 2076): onVRRBoostEvent type: TOUCH status: ENTER
+03-08 13:15:34.109 I/Glide   (23406): Root cause (1 of 1)
+03-08 13:15:34.109 I/Glide   (23406): com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.109 I/Glide   (23406): 	at com.bumptech.glide.integration.okhttp3.OkHttpStreamFetcher.onResponse(OkHttpStreamFetcher.java:73)
+03-08 13:15:34.109 I/Glide   (23406): 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)
+03-08 13:15:34.109 I/Glide   (23406): 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+03-08 13:15:34.109 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+03-08 13:15:34.109 I/Glide   (23406): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+03-08 13:15:34.109 I/Glide   (23406): 	at java.lang.Thread.run(Thread.java:1126)
+03-08 13:15:34.109 I/PG_ash  ( 4246): onInputHookEvent
+03-08 13:15:34.109 D/CpuGovernor( 4246): handleAction: action id=231 time=1772946934109 Flag=1 name=touch_up pkg=1019823 com.tananaev.logcat/com.tananaev.logcat.GoogleActivity
+03-08 13:15:34.110 E/EmkatGlide(23406): 海报加载失败: Failed to load resource
+03-08 13:15:34.110 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.110 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.110 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.110 E/EmkatGlide(23406): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+03-08 13:15:34.110 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.110 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.110 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.110 E/EmkatGlide(23406):   Cause (1 of 1): class com.bumptech.glide.load.engine.GlideException: Fetching data failed, class java.io.InputStream, REMOTE
+03-08 13:15:34.110 E/EmkatGlide(23406): There was 1 cause:
+03-08 13:15:34.110 E/EmkatGlide(23406): com.bumptech.glide.load.HttpException()
+03-08 13:15:34.110 E/EmkatGlide(23406):  call GlideException#logRootCauses(String) for more detail
+03-08 13:15:34.110 E/EmkatGlide(23406):     Cause (1 of 1): class com.bumptech.glide.load.HttpException: 
+03-08 13:15:34.112 D/RenderEngine( 2076): [HnFreeformBackground of Task=11925#19354] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.113 D/RenderEngine( 2076): [Task=11925#19141] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.113 D/RenderEngine( 2076): [com.tananaev.logcat/com.tananaev.logcat.GoogleActivity#19346] set isRequiresLinearEffect false when dimming ratio equals 1.
+03-08 13:15:34.113 D/RenderEngine( 2076): [Caption of Task==11925#19352] set isRequiresLinearEffect false when dimming ratio equals 1.
+
